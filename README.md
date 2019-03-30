@@ -8,7 +8,7 @@ R shiny apps for proteomics.
 
 Website
 ------
-https://gtpb.github.io/PDA18/
+https://gtpb.github.io/PDA19-dev/
 
 Credits
 -------
