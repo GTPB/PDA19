@@ -1,68 +1,91 @@
 ---
-layout: page
+layout: default
 title: Software for Stats Tutorials
 ---
 
 There are three options to work with the software:
 
-1. Using an online binder docker environment that launches R studio immediately.
-2. Using an online binder docker environment that launches a Jupyter binder environment.
-3. Using an offline docker that launches a Jupyter environment.
+1. Install RStudio locally
+2. Using an online binder docker environment that launches R studio immediately. Remark: This tends to be unstable in combination with shiny Apps, the App gets disconnected when there is no browser activity in the App window.
+3. Using an online binder docker environment that launches a Jupyter binder environment. See Note above.
+4. Using an offline docker that launches a Jupyter environment. Most stable way to
+5. Portable windows R/Rstudio/MSqRob version: [Download portable windows version](https://users.ugent.be/~lclement/MSqRobPortable.zip)
 
-<br/>
+### 1. Local installation
 
-## Getting started
+- Install [R/Rstudio](https://www.rstudio.com/products/rstudio)
+- Install Bioconductor packages:
+``` yaml
+source("http://bioconductor.org/biocLite.R")
+biocLite()
+```
+- Install MSnbase
+``` yaml
+biocLite(“MSnbase”)
+```
+- Install devtools and MSqRob
+``` yaml
+biocLite("devtools")
+devtools::install_github("statOmics/MSqRob@MSqRob0.7.5")
+```
 
-1. Launch an R studio interface in an R docker along with bioconductor packages for proteomics.
+- Download and unzip pda master tree
+	- Go to the pda site on github: [https://github.com/statOmics/pda](https://github.com/statOmics/pda)
+	- Click on the clone/download button and select download zip 
+![](./fig/downloadPdaMasterTree.png)
+	- Unzip the repository
+	- Open Rstudio and go to the unzipped folder
 
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/GTPB/PDA18/master?urlpath=rstudio)
 
-2. Alternatively, you can launch R studio via the jupyter binder environment:
+### 2. Getting started with online Docker image
 
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/GTPB/PDA18/master)
+- Launch an R studio interface in an R docker along with bioconductor packages for proteomics.
+
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/statOmics/shinyTest/master?urlpath=rstudio)
+
+-  Alternatively, you can launch R studio via the jupyter binder environment:
+
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/statOmics/shinyTest/master)
 
 Once inside Jupyter Notebook, RStudio Server should be an option under the menu
 "New":
 
-![](./pages/figs/rstudio-session.jpg)
+![](./figs/rstudio-session.jpg)
 
-3. You can install your own local docker by downloading the entire repository and invoking
+### 3. Install the Docker locally
+
+#### 3.1 Generate docker image
+
+- You can install your own local docker by downloading the entire repository and invoking in a console:
+
 ```
 docker build <path to proteomicsShortCourse directory> -t msqrob_docker
 ```
 
-<br/>
 
-## Install the Docker on local machines at GTPB.
-
-Tentative for participants at GTPB.
-In the PC-roams the docker is available on the share.
-You only have to install the docker  do that once for every machine.
+#### 3.2 Install the Docker on local machines
 
 1. Open a terminal
 ![Figure Launch Docker 1](./figs/installDocker1.png)
 
-<br/>
-
-2. Type
+2. type
 
 ```
 sudo docker load -i /media/gtpb_shared_drive/To_Participant/statsDocker/msqrob_docker.tar
 ```
 
-You have to run the command as a super user (sudo) because normal users do not have the permission to launch docker on the PCs in the tutorial roam.
+You have to run the command as a super user
+`sudo` because normal users do not have the permission to launch docker on the PCs in the tutorial roam.
 The `docker` command launches docker.
 The `load` command will enable a new docker to be installed locally.
 The switch `-i` stand for input
 Then we give the full path to the docker, which is available on the share.
 
-![Figure Launch Docker 2](./figs/installDocker2.png)
+![Figure Launch Docker 2](pages/figs/installDocker2.png)
 
 Now the docker installations starts.
 
-<br/>
-
-## Launch the Docker
+#### 3.3 Launch the Docker
 
 1. Open a terminal
 
@@ -91,11 +114,16 @@ Here, it was,
 http://c924e5fb54b5:8888/?token=dd01e2e228d8200e8e2cba2f8fff2a9396f4c22b9068c4d5&token=dd01e2e228d8200e8e2cba2f8fff2a9396f4c22b9068c4d5
 ```
 
-we first replace the machine name `c924e5fb54b5` by localhost and paste the adjusted adress in the browser.
+we first replace the machine name `c924e5fb54b5` by localhost and paste the adjusted address in the browser.
 ```
 http://localhost:8888/?token=dd01e2e228d8200e8e2cba2f8fff2a9396f4c22b9068c4d5&token=dd01e2e228d8200e8e2cba2f8fff2a9396f4c22b9068c4d5
 ```
 
+Alternatively, you can connect paste the address
+ ```
+http://localhost:8888/
+ ```
+  in the browser and paste the token when requested.
 
 Note, that copying in linux is possible via highlighting text. Pasting can be done by pushing the middle mouse button.
 
@@ -105,12 +133,10 @@ Press enter! Then the jupyter hub environment will launch.
 
 ![Figure ](./figs/jupyterHub.png)
 
-Select **New** > **Rstudio Session** to launch the statistical software R.
+Select New>Rstudio Session to launch the statistical software R.
 Now an interactive statistical programming environment will open in the browser that runs on a cloud server.
 
-<br/>
-
-## Close the Docker
+### Close the Docker
 
 Only if you work with a local Docker.
 1. Close RStudio
@@ -121,9 +147,3 @@ Only if you work with a local Docker.
 sudo docker stop c924e5fb54b5
 ```
 where you replace `c924e5fb54b5` with the name of your docker.
-
-<br/>
-
-### Back
-
-Back to [main page](../index.md).
