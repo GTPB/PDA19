@@ -1,6 +1,6 @@
 ---
 layout: page
-title: PDA18
+title: PDA19
 tagline: Proteomics Data Analysis
 description: Pratical training course that covers Mass spectrometry based proteomic experiments
 ---
