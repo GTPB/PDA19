@@ -71,18 +71,16 @@ The other normalization steps are performed upon hitting the “Do Normalization
 
 ![Figure 9. MSqRob Preprocessing tab upon normalization](./figs/MSqRobPreprocessing3.png)
 
-The first preprocessing step is log-transformation.
+###### The first preprocessing step is log-transformation.
 Why is log-transformation needed? (Hint: untick the checkbox before “Log-transform data” and see what happens to the data distribution.) [2.3.2.a]
 
-Why do we choose base 2? (Hint: think of the interpretation later on!) [2.3.2.b]
+###### Why do we choose base 2? (Hint: think of the interpretation later on!) [2.3.2.b]
 The next step is normalization. It is difficult to propose a one-size-fits-all normalization because the nature and extent of bias in the data are generally unknown. Thus, relative performance of different normalization methods might be different in different datasets [8].
 
-Why do we normalize our data? [2.3.2.c]
+###### Why do we normalize our data? [2.3.2.c]
 In order to see the effects of different normalization approaches, select “lab” as the color variable in the right panel. Try changing the normalization to center “median” and “vsn” and see what happens. The impact of the different methods is not that large, but it will become more important in the other examples. For this tutorial, we will choose quantile normalization (“quantiles”).
 
-What is quantile normalization? [2.3.2d]
-
-What do you conclude based on the MDS plot after quantile normalization (see also Fig. 4)? [2.3.2e]
+###### What do you conclude based on the MDS plot after quantile normalization (see also Fig. 4)? [2.3.2d]
 
 Razor peptides are peptides that cannot be uniquely attributed to a single protein or protein group. As we are uncertain from which protein group these peptides originate and their intensities might even be a combined value from multiple protein groups, we opt to remove these peptides by default. The option “Remove comprising protein groups” deals with peptides that are shared between protein groups.  This option removes all peptides in protein groups for which any of its peptides map to a protein that is also present in another smaller protein group.
 
@@ -103,7 +101,7 @@ We first select the naive median summarization method and hit the “Start Summa
 
 We then select the robust method, which we will use in the downstream data analysis method so as to implement the two-stage MSqRob procedure. Also download the summarization results.
 
-What do you see upon summarization with the robust method and why would that be the case? [2.3.3.a]
+###### What do you see upon summarization with the robust method and why would that be the case? [2.3.3.a]
 
 ##### Intermezzo: Evaluate Summarization.
 We further explore the difference between summarization methods.
@@ -130,9 +128,10 @@ The html will now be updated if you save the R book.
 If you add text and save the result, the boot is again updated.
 
 
-[2.3.3.a] Open your summarized expression value file for the median summarization (file with earliest time stamp). Calculate the average summarized log expression values for both treatments, the log Fold Change (difference between average summarized log expression value in treatment B and A) and make a box plot of the Fold Changes.
+Open your summarized expression value file for the median summarization (file with earliest time stamp). Calculate the average summarized log expression values for both treatments, the log Fold Change (difference between average summarized log expression value in treatment B and A) and make a box plot of the Fold Changes.
 Repeat this for the robust summarization method.
-Compare the MaxLFQ, median and robust summarization methods. What do you observe and try to explain this.
+
+###### Compare the MaxLFQ, median and robust summarization methods. What do you observe and try to explain this. [2.3.3.a]
 
 ##### 2.3.4. The Quantification tab
 
@@ -167,9 +166,11 @@ Select an area on the plot and double click to zoom in. Double click on an unsel
 
 *Hint: The results can be saved. Open the file “project_Timestamp_CPTAC_AvsB_results.xlsx” in the default download folder of your browser*
 
-##### Repeat the quantification for median summarized values. What do you observe and try to explain the difference with the summarization with the robust linear model? [2.3.4b]
+Repeat the quantification for median summarized values and for maxLFQ summarized values. You can do the latter by uploading the lfqFileForMSqRobAnalysis.txt file as the peptides file of the input tab. Note, that the latter file already contains summarized LFQ intensities and no summarization is required.
 
-##### Repeat the quantification for maxLFQ values summarized values. You can do that by uploading the proteinGroups.txt file in the peptides file of the input tab. What do you observe and try to explain the difference with the summarization with the robust linear model? [2.3.4c]
+##### What do you observe and try to explain the difference for median and lfq summarization with that of the robust linear model approach? [2.3.4b]
+
+##### Repeat the quantification for maxLFQ values summarized values.
 
 #### 2.4 The Francisella dataset
 A study on the facultative pathogen Francisella tularensis was conceived by Ramond et al. (2015) [12]. F. tularensis enters the cells of its host by phagocytosis. The authors showed that F. tularensis is arginine deficient and imports arginine from the host cell via an arginine transporter, ArgP, in order to efficiently escape from the phagosome and reach the cytosolic compartment, where it can actively multiply. In their study, they compared the proteome of wild type F. tularensis (WT) to ArgP-gene deleted F. tularensis (knock-out, D8). For this exercise, we use a subset of the F. tularensis dataset where bacterial cultures were grown in biological triplicate and each sample was run on a nanoRSLC-Q Exactive PLUS instrument. The data were searched with MaxQuant version 1.4.1.2.
@@ -196,9 +197,9 @@ The summarization part is analogous as for the CPTAC example.
 
 We again group by “Proteins”. The “Annotation columns” field allows retaining extra annotation columns that one might have added to the peptides file. Add “Protein names” and “GI number” to the “Annotation columns” field.
 
-Which contrast do we want to test now? [2.4.4a]
+###### Which contrast do we want to test now? [2.4.4a]
 
-Give the interpretation of the contrast for your top hit? [2.4.4b]
+###### Give the interpretation of the contrast for your top hit? [2.4.4b]
 
 #### 2.5. Breast cancer example
 
