@@ -158,7 +158,7 @@ $$ H0: log_2 ⁡6B-log_2 ⁡6A \neq0 $$
 
 And we will falsify this null hypothesis for each protein separately. So, under the null hypothesis we reason that there is no effect of the spike-in treatment on the abundance of a specific protein. The p-value of the statististical test than indicates the probability to observe an effect (fold change), that is as extreme or more extreme (equally or more up or down regulated) than what is observed in the sample, by random change (when the null hypothesis is true and when there is in reality no effect of the treatment).
 
-What is the difference between setting 6B to 1 and 6A to -1 versus setting 6B to -1 and 6A to 1? [4.6.4f]
+##### What is the difference between setting 6B to 1 and 6A to -1 versus setting 6B to -1 and 6A to 1? [2.3.4a]
 
 Press the “Start the analysis!” button and wait for the analysis to complete.
 
@@ -166,6 +166,10 @@ Click on some dots in the Volcano plot to see the underlying data. You can again
 Select an area on the plot and double click to zoom in. Double click on an unselected area to reset the plot window. Selecting a protein in the “Results table” results in selecting it on the Volcano plot.
 
 *Hint: The results can be saved. Open the file “project_Timestamp_CPTAC_AvsB_results.xlsx” in the default download folder of your browser*
+
+##### Repeat the quantification for median summarized values. What do you observe and try to explain the difference with the summarization with the robust linear model? [2.3.4b]
+
+##### Repeat the quantification for maxLFQ values summarized values. You can do that by uploading the proteinGroups.txt file in the peptides file of the input tab. What do you observe and try to explain the difference with the summarization with the robust linear model? [2.3.4c]
 
 #### 2.4 The Francisella dataset
 A study on the facultative pathogen Francisella tularensis was conceived by Ramond et al. (2015) [12]. F. tularensis enters the cells of its host by phagocytosis. The authors showed that F. tularensis is arginine deficient and imports arginine from the host cell via an arginine transporter, ArgP, in order to efficiently escape from the phagosome and reach the cytosolic compartment, where it can actively multiply. In their study, they compared the proteome of wild type F. tularensis (WT) to ArgP-gene deleted F. tularensis (knock-out, D8). For this exercise, we use a subset of the F. tularensis dataset where bacterial cultures were grown in biological triplicate and each sample was run on a nanoRSLC-Q Exactive PLUS instrument. The data were searched with MaxQuant version 1.4.1.2.
