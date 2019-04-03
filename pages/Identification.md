@@ -6,7 +6,7 @@ mathjax: true
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-Shotgun proteomics relies on the assignment of a large number of spectra to theoretical peptides derived from a sequence database. Multiple search engines have been developed for this task, each with its own advantages and drawbacks. Most proteomics database searches are performed as so-called target/decoy searches. A crucial assumption of the target/decoy approach is that the decoy peptide-spectral 
+Shotgun proteomics relies on the assignment of a large number of spectra to theoretical peptides derived from a sequence database. Multiple search engines have been developed for this task, each with its own advantages and drawbacks. Most proteomics database searches are performed as so-called target/decoy searches. A crucial assumption of the target/decoy approach is that the decoy peptide-spectral
 match (PSM) hits have similar properties as bad target hits so that the decoys can be used to characterize the distribution of bad hits. In this tutorial we will introduce diagnostic plots that can be used to evaluate these assumptions.
 
 <br/>
@@ -79,7 +79,7 @@ The App is launched.
 
 The Pyrococcus furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1) reference proteome. The resulting database has 2,051 proteins in total ([https://www.uniprot.org/uniprot/?query=taxonomy:186497](https://www.uniprot.org/uniprot/?query=taxonomy:186497), taxonomy:"Pyrococcus furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1) [186497]").
 
-The data can be found on [https://github.com/GTPB/PDA18/tree/data](https://github.com/GTPB/PDA18/tree/data).
+The data can be found on [https://github.com/GTPB/PDA19/tree/data](https://github.com/GTPB/PDA19/tree/data).
 Use the mzid file for the pyrococcus example, which can be found at data/identification/pyrococcusMSGF+.mzid.
 When the file is uploaded, push the "Process mzid file" button. It will take a while to process the file and you will see that the "Process mzid file" becomes light blue and that an activity indicator appears next to the button.
 
