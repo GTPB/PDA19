@@ -25,9 +25,8 @@ All the datasets used for this training course is available throughout the docum
 
 - Slides: [Bioinformatics for Proteomics](assets/martens_proteomics_bioinformatics_20190401.pdf)
 - Slides: [Quantification in MS proteomics](assets/martens_proteomics_quantification_20180530.pdf)
-- Slides: Data Sharing
- <!-- - Slides: [Data Sharing](assets/DataSharingPDA19.pdf)
--->
+- Slides: [Data Sharing](assets/DataSharingPDA19.pdf)
+- Slides: [Pathways](assets/PathwayDiscussionPDA19.pdf)
 
 - Tutorials: [Tutorials Bioinformatics for Proteomics](https://compomics.com/bioinformatics-for-proteomics/)  
 
