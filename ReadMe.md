@@ -18,7 +18,7 @@ The following co-authors contributed to the development of the training material
 - The [rocker-binder team](https://github.com/rocker-org/binder) for providing a docker image with shiny proxy support.
 
 #### Course Webpage
-This is the link to the [course webpage](http://gtpb.igc.gulbenkian.pt/bicourses/2019/IBIP19/), for further information about the course.
+This is the link to the [course webpage](http://gtpb.igc.gulbenkian.pt/bicourses/2019/PDA19/), for further information about the course.
 
 ---
 
@@ -26,4 +26,4 @@ This is the link to the [course webpage](http://gtpb.igc.gulbenkian.pt/bicourses
 
 <br/>
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">IBIP19</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">GTPB</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">PDA19</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">GTPB</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
