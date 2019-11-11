@@ -2,7 +2,7 @@
 
 ###  Instituto Gulbenkian de Ciência (IGC) - Oeiras, Portugal - April 1<sup>st</sup> - April 4<sup>th</sup> 2019
 
-<br/>
+---
 
 #### Co-Authorship
 
