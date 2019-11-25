@@ -2,6 +2,13 @@
 layout: default
 title: 0. Install and Launch Local Docker
 mathjax: true
+schemadotorg:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  "genre": TrainingMaterial
+  isPartOf:
+      url: "https://gtpb.github.io/PDA19/"
+      name: "PDA19 - Proteomics Data Analysis"
 ---
 
 This is only necessary for participants that want to work with the software offline.

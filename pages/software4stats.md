@@ -1,6 +1,13 @@
 ---
 layout: default
 title: Software for Stats Tutorials
+schemadotorg:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  "genre": TrainingMaterial
+  isPartOf:
+      url: "https://gtpb.github.io/PDA19/"
+      name: "PDA19 - Proteomics Data Analysis"
 ---
 
 There are three options to work with the software:

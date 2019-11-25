@@ -2,6 +2,13 @@
 layout: default
 title: 2. Statistical analysis with MSqRob for simple designs
 mathjax: true
+schemadotorg:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  "genre": TrainingMaterial
+  isPartOf:
+      url: "https://gtpb.github.io/PDA19/"
+      name: "PDA19 - Proteomics Data Analysis"
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
