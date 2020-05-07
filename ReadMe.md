@@ -1,4 +1,5 @@
 ## PDA19 - Proteomics Data Analysis
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3814729.svg)](https://doi.org/10.5281/zenodo.3814729)
 
 ###  Instituto Gulbenkian de Ciência (IGC) - Oeiras, Portugal - April 1<sup>st</sup> - April 4<sup>th</sup> 2019
 
